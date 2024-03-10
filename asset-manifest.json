@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/feedback/static/css/main.40cf4bf7.css",
+    "main.js": "/feedback/static/js/main.f4845f30.js",
+    "static/media/headphone4.png": "/feedback/static/media/headphone4.e1bf0f10700349d66ef6.png",
+    "static/media/headphone1.png": "/feedback/static/media/headphone1.910dc88f089a25155216.png",
+    "static/media/heroImage1.png": "/feedback/static/media/heroImage1.2bc58558bf9eb6dff236.png",
+    "static/media/headphone5.png": "/feedback/static/media/headphone5.ca35792bcdce6788b250.png",
+    "static/media/headphone2.png": "/feedback/static/media/headphone2.43579a711823f7f093c7.png",
+    "static/media/login.png": "/feedback/static/media/login.00919fa93603a16ff704.png",
+    "static/media/headphone3.png": "/feedback/static/media/headphone3.8dbf070e27eb7598ee72.png",
+    "index.html": "/feedback/index.html",
+    "main.40cf4bf7.css.map": "/feedback/static/css/main.40cf4bf7.css.map",
+    "main.f4845f30.js.map": "/feedback/static/js/main.f4845f30.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.40cf4bf7.css",
+    "static/js/main.f4845f30.js"
+  ]
+}
