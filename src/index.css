@@ -1,0 +1,926 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+*{
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  transition: .3s ease all;
+}
+:root{
+  --heroBackground: #F6ECE2;
+  --PrimaryColor: hsl(199,100%,33%);
+  --SecondaryColor: hsl(187,85%,43%);
+  --gradientColor: linear-gradient(to right, hsl(187,85%,43%),hsl(199,100%,33%));
+  --whiteColor:hsl(0,0%,100%);
+  --blackColor:hsl(201,33%,16%);
+  --textColor:hsl(240,4%,36%);
+  --whiteColorDeam:hsl(0,0%,93%);
+  --greyText:rgb(190,190,190);
+  --inputColour:rgb(239,239,239);
+  --bodyColor:rgb(240,240,246);
+  --cardBg:rgb(255,255,235);
+}
+ul li{
+  list-style-type: none;
+}
+.flex{
+  display: flex;
+  align-items: center;
+}
+a{
+  text-decoration: none;
+}
+.h1{
+  font-weight: bolder;
+  color: #013C29;
+}
+h2{
+  font-weight: bold;
+
+}
+.mb2{
+  margin-bottom: 2rem;
+}
+.mb3{
+  margin-bottom: 3rem;
+}
+.mb4{
+  margin-bottom: 4rem;
+}
+.mb4{
+  mask-border: 2rem;
+}
+img,video{
+  width: 100%;
+}
+.section{
+  padding: 4rem 0 2rem;
+}
+.container{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.icon{
+  font-size: 2rem;
+  cursor: pointer;
+}
+.btn{
+  padding: .6rem 1.5rem;
+  /* background: var(--gradientColor); */
+  background: #013C29;
+  border-radius: 3rem;
+  border: 2px solid #013C29;
+  cursor: pointer;
+  color: #fefefe;
+  font-weight: bold;
+}
+.btn a{
+  color: var(--whiteColor);
+  font-weight: 500;
+}
+.btn:hover{
+  background: #fff;
+  color: #013C29;
+  border: 2px solid #013C29;
+}
+body{
+  background-color: #fefefe;
+  /* background-color: pink; */
+}
+.bold{
+  font-weight: bold;
+}
+.textCenter{
+  text-align: center;
+}
+.navbar{
+  justify-content: space-between;
+}
+.navbar ul a{
+  margin-left: 2rem;
+  color: #013C29;
+  border-bottom: 2px solid transparent;
+  padding-bottom: .5rem;
+
+}
+.navbar a:hover{
+  border-bottom: 2px solid #013C29;
+}
+.hero{
+  background-color: var(--heroBackground);
+  /* background-color: red; */
+  border-radius: .5rem;
+  padding: 0 2rem;
+}
+/* .login{
+  background-color: #A8A8DE;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: max-content;
+  border-radius: 1rem;
+}
+.loginLeft{
+  background-color: #F6ECE2;
+  border-radius: 1rem 0 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.loginLeft img{
+  width: 70%;
+  height: auto;
+}
+.loginRight{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-left: 4rem;
+}
+.loginBox{
+  width: 50%;
+  background-color: #fefefe;
+  padding: 4rem ;
+  border-radius: .5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+.w100{
+  width: 100%;
+}
+.center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loginWithGoogle{
+  background-color: #F6ECE2;
+  border-radius: .5rem;
+}
+.loginWithGoogle i{
+  margin-right: 1rem;
+}
+.inputField input{
+  outline: none;
+  border: none;
+  padding-left: 1rem;
+  font-size: 1rem;
+  background-color: transparent;
+}
+.inputField{
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+  border-radius: .5rem;
+  /* align-items: center; */
+  /* background-color: red; */
+  height: 3rem;
+  border: 2px solid #013C29;
+}
+.inputField i{
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  margin-left: 1rem;
+}
+.loginRemember {
+  display: flex;
+  align-items: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.loginBtn button{
+  height: 3rem;
+  background-color: #013C29;
+  border: 2px solid transparent;
+  color: #fff;
+  font-weight: bold;
+  border-radius: .2rem;
+  cursor: pointer;
+}
+.loginBtn button:hover{
+  border-color:#013C29;
+  color: #013C29;
+  background-color: #fff;
+}
+.productHead{
+  align-items: center;
+  justify-content: space-between;
+}
+/* ----------------add product form ---------------------------- */
+.addProduct{
+  display: grid;
+  background-color: #F6ECE2;
+  min-height: 80vh;
+  width: 90%;
+  margin: auto;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+  padding-bottom: 4rem;
+}
+.addProductHeading{
+  color: #013C29;
+}
+.addProductFormRight{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.addProductLeftForBackground {
+  width: 70%;
+  margin: auto;
+}
+.addProductForm{
+  padding: 1rem 2rem;
+
+}
+.addProductInputField{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-bottom: 1rem;
+}
+.addProductInputField label{
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.addProductInputField input{
+  width: 70%;
+  height: 2rem;
+  padding: .5rem 1rem;
+  font-size: 1rem;
+  border: 2px solid transparent;
+  box-shadow: 2px 2px 2px -2px   #F6ECE2;
+  border-radius: .5rem;
+}
+.addProductInputField input:focus{
+  border: 2px solid #013C29;
+}
+.addProductBtn button{
+  width: 80%;
+  height: 3rem;
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+/* --------------------prpoducts---------------------- */
+.allPopularHeadphones{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  height: max-content;
+
+}
+.headphonesComponents{
+  background-color: var(--heroBackground);
+  padding-left:2rem;
+  padding-right:2rem;
+  border-radius: 1rem;
+}
+.headphonesComponents:hover{
+  transform: translateY(-3px);
+  box-shadow: 2px 2px 95px -85px #333;
+}
+.headphonesComponents img{
+  width: 70%;
+  display: flex;
+  margin: auto;
+}
+.popularreview i{
+  margin-right: .5rem;
+}
+@media(max-width: 1025px){
+  .popular .allPopularHeadphones {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .allPopularHeadphones{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .addProductFields input{
+    width: 100%;
+  }
+  .addProductBtn button{
+    width: 100%;
+  }
+}
+@media(max-width:769px){
+  .hero h1{
+    font-size: 1.5rem;
+  }
+  .hero{
+    padding: 1rem 2rem;
+  }
+  .popular h2{
+    text-align: center;
+  }
+  .popular .allPopularHeadphones{
+    grid-template-columns: 1fr;
+    width: 80%;
+    margin: auto;
+  }
+  .popularreview i{
+    margin-bottom: 2rem;
+    margin-right: 0rem;
+  }
+  .popular button{
+    width: 100%;
+  }
+  .allPopularHeadphones{
+    grid-template-columns: 1fr;
+  }
+  .allPopularHeadphones .singleProduct{
+    /* background-color: green; */
+    height: max-content;
+    width: 90%;
+    margin: auto;
+    /* max-width:fit-content; */
+  }
+  .allPopularHeadphones .singleProduct i{
+    margin-right: .3rem;
+    margin-bottom: .1rem;
+  }
+  .popularBackgroundImage {
+    height: 10%;
+    /* background-color: red; */
+  }
+  .popularBackgroundImage img{
+    width: 50%;
+  }
+  .addProductLeftForBackground {
+    display: none;
+  }
+  .addProductFormRight{
+    grid-template-columns: 1fr;
+  }
+  .addProduct{
+    width: fit-content;
+    padding-right: 4rem;
+    margin: 0 2rem;
+  }
+}
+@media(max-width:481px){
+    .hero img{
+      display: none;
+    }
+    .hero h1{
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+    }
+    .hero{
+      margin-bottom: -2rem;
+    }
+    /* .hero .heroContent{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    } */
+    .popular h2{
+      font-size: 1.3rem;
+    }
+    .popular .allPopularHeadphones{
+      height: max-content;
+      /* padding: 0; */
+    }
+    .popularBackgroundImage img{
+      height: 50%;
+    }
+    .popularContent{
+      /* background-color: green; */
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: start;
+    }
+    .popularreview {
+      /* background-color: red; */
+      width: max-content;
+    }
+    .popularreview i{
+      margin: 0;
+      padding: 0;
+      margin-left: .5rem;
+      margin-right: 0;
+    }
+}
+@media(max-width:320px ){
+  
+}
+
+
+/* ------------------feedback home------------------------- */
+.feedbackHome{
+  display: flex;
+  flex-direction: column;
+}
+.feedbackHero{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* background-color:#A8A8DE; */
+  height: 90vh;
+}
+.heroText{
+  height: 100%;
+  display: flex !important;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding-left: 3rem;
+  /* padding: 10rem 3rem; */
+}
+.heroText h1{
+  font-size: 3em;
+  color: #D6E2ED ;
+  font-weight: bolder;
+}
+.heroButton button{
+  height: 3.5rem;
+  width: max-content;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  border: 2px solid #D6E2ED;
+  color: #D6E2ED;
+  outline: none;
+  cursor: pointer;
+  border-radius: .5rem;
+  background-color: transparent;
+  font-weight: bold;
+}
+.heroButton button:hover{
+  background-color: #013C29;
+  color: #26333B;
+  border: 2px solid #d6d6d6;
+  background-color: #D6E2ED;
+  padding: 1rem 2.2rem;
+}
+.heroTwo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.heroTwo img{
+  width: 60%;
+  position: relative;
+  cursor: pointer;
+  transition: .5s ease-in;
+}
+.heroTwo img:hover{
+  /* transform: translate(.2rem,-.2rem); */
+  width: 65%;
+}
+/* ----------------------Feed Back  slider-------------------------- */
+body{
+  background-color: #26333B;
+}
+.navbar-desktop-links li a{
+  color: #d6d6d6;
+}
+ul li  a{
+  color: #fff;
+}
+.navbar-desktop-links li a:hover{
+  border-color: #d6d6d6;
+}
+.sliderParent{
+  background-color: #D6E2ED;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 5rem;
+  /* height: 100vh; */
+}
+.feedbackOne{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  color: #26333B;
+  font-size: 1.2rem;
+}
+.slider{
+  width: 50%;
+  margin: auto;
+  height: max-content;
+  background-color: #fff;
+  padding: 2rem 3rem;
+  border-radius: 1rem;
+}
+.singleFeedback{
+  display: flex !important;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  /* grid-template-columns: 8fr 1fr; */
+  /* height: 40vh; */
+}
+.feedbackDescription{
+  height: max-content;
+  margin-bottom: 3rem;
+}
+.singleFeedbackTwo{
+  display: flex;
+  width: 100%;
+}
+.feedbackImage{
+  width: 20%;
+  margin-right: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 1rem; */
+}
+.feedbackImage img{
+  width: 3rem;
+  height: 3rem;
+}
+.feedbackName h2{
+  color: #26333B;
+}
+.feedbackDate{
+  font-size: .8rem;
+}
+/* -----------------addFeedbackForm----------------- */
+.addFeedbackForm,.loginForm{
+  background-color: #d6d6d6;
+  height: max-content;
+  width: 60%;
+  margin: auto;
+  border-radius: 1rem;
+  padding: 4rem 5rem;
+  display: grid;
+}
+.addFeedbackOne .addFeedbackHeading{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.addfeedbackTwo{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 3rem 1rem;
+}
+.addfeedbackTwo .addFeedbackLeft{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.addfeedbackTwo .addFeedbackLeft img{
+  width: 80%;
+}
+.addfeedbackTwo .addfeedbackRight{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+.addfeedbackTwo .addfeedbackRight .addFeedbackField{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+.addfeedbackRight .addFeedbackField label{
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: #26333B;
+  font-weight: bold;
+}
+.addFeedbackField input{
+  height: 2.5rem;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #D6E2ED;
+  border-radius: .5rem .5rem 0 0;
+  padding: 0 1rem;
+}
+.addFeedbackField input:focus{
+  border-color: #262626;
+}
+.addFeedbackField{
+  width: 100%;
+  min-height: 4rem;
+  height: max-content;
+  font-size: 1rem;
+}
+.addFeedbackField button{
+  width: 100%;
+  height: 3rem;
+  background-color: #26333B;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #D6E2ED;
+  border-radius: .5rem;
+  border: 2px solid transparent;
+  font-weight: bold;
+}
+.addFeedbackField button:hover{
+  border-color: #262626;
+  color: #26333B;
+}
+/* ---------------------login--------------------- */
+.loginForm{
+  grid-template-columns: 1fr 1fr;
+}
+.loginLeft{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  width: 100%;
+}
+.loginRight{
+  padding: 2rem;
+}
+.loginSection{
+  /* background-color: green; */
+  width: 100%;
+}
+.logingHeading{
+  display: flex;
+  flex-direction: column;
+}
+.logingHeading h2{
+  margin-bottom: 0;
+}
+.loginField{
+  /* background-color: red; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.loginField label{
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+.loginField input{
+  height: 2.5rem;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #D6E2ED;
+  font-size: 1rem;
+  padding: 0 1rem;
+  border-radius: .5rem .5rem 0 0;
+
+}
+.loginField input:focus{
+  border-color: #262626;
+}
+.loginField button{
+  font-weight: bold;
+  height: 2.5rem;
+  cursor: pointer;
+  background-color: #262626;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: #D6E2ED;
+  border-radius: .5rem;
+  margin-top: 1rem;
+}
+.loginField button:hover,
+.addFeedbackField button:hover{
+  background-color: #D6E2ED;
+  color: #262626;
+  border:2px solid #262626;
+}
+/* =================logout====================== */
+.logout{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.logout button{
+  height: 4rem;
+  width: max-content;
+  padding: 2rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #26333B;
+  border: 2px solid #d6d6d6;
+  color: #d6d6d6;
+  border-radius: .5rem;
+}
+.logout button:hover{
+  background-color: #D6E2ED;
+  color: #26333B;
+}
+/* Desktops, large screens – 1025px — 1200px. */
+@media(max-width: 1025px){ 
+    .feedbackHero h1{
+      font-size: 2.8rem;
+      width: 100%;
+    }
+    .feedbackHero img{
+      width: 80%;
+    }
+    .feedbackHero img:hover{
+      width: 85%;
+    }
+    .slider{
+      width: 90%;
+    }
+    .feedbackNameWithDate{
+      width: 100%;
+    }
+    .addfeedbackTwo,.loginForm{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .addFeedbackLeft,.loginRight{
+      display: none !important;
+    }
+    .addfeedbackRight,.loginLeft{
+      width: 90%;
+    }
+    .logingHeading{
+      text-align: center;
+      width: 100%;
+    }
+}
+/* Small screens, laptops – 769px — 1024px. */
+@media(max-width: 769px){ 
+  .feedbackHome{
+    /* background-color: red; */
+
+  }
+  .feedbackHome h1{
+    font-size: 2.4rem;
+  }
+}
+@media(max-width:580px){
+  .feedbackHero{
+    width: 100%;
+    display: flex;
+    text-align: center;
+  }
+  .heroText{
+    padding: 0;
+    align-items: center;
+  }
+  .heroTwo{
+    display: none !important;
+  }
+  .slider{
+    width: 100%;
+  }
+  .addFeedbackForm{
+    min-height: max-content;
+    /* height: 80vh; */
+    padding: 2rem 2.5rem;
+    /* background-color: pink; */
+    width:80%;
+  }
+  .addFeedbackOne{
+    /* background-color: red; */
+    width: 100%;
+  }
+  .addfeedbackTwo{
+    /* background-color: beige; */
+    height: max-content;
+    /* margin-bottom: 2rem; */
+    padding-bottom: 0rem;
+  }
+  .addFeedbackHeading{
+    padding: 0 1rem;
+  }
+  .slider h2{
+    font-size: 1.2rem;
+    font-weight: bolder;
+  }
+}
+/* iPads, Tablets – 481px — 768px. */
+@media(max-width: 481px){ 
+  .feedbackHome{
+    /* background-color: green; */
+  }
+  .slider{
+    /* background-color: pink; */
+    padding: 1rem;
+  }    
+  .feedbackHeading{
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+  }
+  .feedbackHeading h2{
+    font-size: 1.5rem;
+  }
+  .singleFeedback{
+    /* background-color: brown; */
+  }
+  .singleFeedbackOne{
+    /* background-color: gray; */
+    padding: 0 1rem;
+  }
+  .addFeedbackForm{
+    width: 70%;
+  }
+  .loginForm{
+    width: max-content;
+    /* padding: 4rem 2rem; */
+  }
+  .loginLeft{
+    /* background-color: gray; */
+    width: 100%;
+  }
+  .logingHeading{
+    /* background-color: pink; */
+    margin-bottom: 1rem;
+  }
+  .feedbackHero{
+    height: 80vh;
+  }
+  .heroText{
+    padding: 0 1rem;
+  }
+  .heroText h1{
+    font-size: 2rem;
+  }
+  .feedbackImage img{
+    padding: 0;
+    margin: 0;
+  }
+}
+@media(max-width: 430px){
+   h2{
+    font-size: 1.4rem;
+  }
+  .sliderParent{
+    padding: 2rem 3rem;
+  }
+  .addFeedbackHeading {
+    /* background-color: gray; */
+  }
+  .addFeedbackOne{
+    /* background-color: pink; */
+    padding-block-end: 0;
+    margin: 0;
+  }
+  .addfeedbackTwo{
+    /* background-color: lightblue; */
+    padding: 1rem 0;
+  }
+  .loginForm{
+    padding: 3rem ;
+    margin-top: 1rem;
+  }
+}
+/* Mobile devices – 320px — 480px. */
+@media(max-width: 320px){ 
+    .slider{
+      /* background-color: pink; */
+    }
+    .navbar-desktop-links{
+      display: none ;
+    }
+    .feedbackHeading h2{
+      font-size: 1.2rem;
+      /* background-color: pink; */
+    }
+    .sliderParent{
+      padding: 1rem 1.8rem;
+    }
+    .feedbackImage img{
+      width: 2rem;
+      height: 2rem;
+    }
+    h2{
+      font-size:1.2rem;
+    }
+    .addFeedbackHeading{
+      /* background-color: gray; */
+      padding: 0;
+      margin: 0;
+    }
+    .addFeedbackForm{
+      padding: 2rem 1rem;
+      width: 90%;
+    }
+    .loginForm{
+      padding: 2rem;
+      width: 80%;
+    }
+    .mbileMenuNavbar ul li a{  
+      color: #fff;
+    }
+
+}
