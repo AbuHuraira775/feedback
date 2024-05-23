@@ -1,12 +1,10 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import Home from "../../screens/Home"
-import Feedback from "../../Feedback"
 import FeedbackForm from "../../screens/FeedbackForm"
 import { LogoutRouting, PrivateRouting, PublicRouting } from "../routing/customRoutes"
 import Login from "../../screens/Login"
-// import Login from "../../screens/Login"
 import Error from "../../screens/Error"
-import Navbar from "../../../components/Navbar"
+import Navbar from "../../components/Navbar"
 import Logout from "../../screens/Logout"
 
 const AllRouting = () => {
