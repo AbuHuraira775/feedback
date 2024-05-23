@@ -16,7 +16,7 @@ const AllRouting = () => {
 
         <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/feedback" element={<Home />} />
+            <Route path="/feed" element={<Home />} />
             <Route path="/add-feedback" element={<PrivateRouting />}>
                 <Route path="/add-feedback" element={<FeedbackForm />} />
             </Route>
